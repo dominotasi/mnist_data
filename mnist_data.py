@@ -2,13 +2,15 @@ from mlxtend.data import loadlocal_mnist
 import numpy as np
 import matplotlib.pyplot as plt
 
+data_path = "/home/mustafarslan/Desktop/Projects/mnist_data/daten/"
+
 X, y = loadlocal_mnist(
-    images_path="C:/Users/domin/PycharmProjects/Mnist_Data/daten/train-images.idx3-ubyte",
-    labels_path="C:/Users/domin/PycharmProjects/Mnist_Data/daten/train-labels.idx1-ubyte")
+    images_path=data_path + "train-images-idx3-ubyte.gz",
+    labels_path=data_path + "train-labels-idx1-ubyte.gz")
 
 X_test, y_test = loadlocal_mnist(
-    images_path="C:/Users/domin/PycharmProjects/Mnist_Data/daten/t10k-images.idx3-ubyte",
-    labels_path="C:/Users/domin/PycharmProjects/Mnist_Data/daten/t10k-labels.idx1-ubyte"
+    images_path=data_path + "t10k-images-idx3-ubyte.gz",
+    labels_path=data_path + "t10k-labels-idx1-ubyte.gz"
 )
 """
 print('Dimensions: %s x %s' % (X.shape[0], X.shape[1]))
