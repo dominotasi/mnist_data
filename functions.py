@@ -40,7 +40,7 @@ def cross_entropy_loss(x,y):
     #loss = np.sum(log_likelihood) / m
     #return loss
     # index = y.shape[0]
-    merve = np.argmax(y, axis = 1).astype(int)
+    merve = np.argmax(y, axis = 1).astype(float)
     print(merve)
     print(y)
     probability = x[np.arange(len(x)), merve]

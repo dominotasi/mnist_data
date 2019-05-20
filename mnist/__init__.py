@@ -53,16 +53,16 @@ def download_and_parse_mnist_file(fname, target_dir=None, force=False):
 
 
 def train_images():
-    return download_and_parse_mnist_file('train-images-idx3-ubyte.gz')
+    return download_and_parse_mnist_file('train-images-idx3-ubyte')
 
 
 def test_images():
-    return download_and_parse_mnist_file('t10k-images-idx3-ubyte.gz')
+    return download_and_parse_mnist_file('t10k-images-idx3-ubyte')
 
 
 def train_labels():
-    return download_and_parse_mnist_file('train-labels-idx1-ubyte.gz')
+    return download_and_parse_mnist_file('train-labels-idx1-ubyte')
 
 
 def test_labels():
-    return download_and_parse_mnist_file('t10k-labels-idx1-ubyte.gz')
+    return download_and_parse_mnist_file('t10k-labels-idx1-ubyte')
